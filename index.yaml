@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  jmeter:
+  - apiVersion: v1
+    appVersion: 1.16.0
+    created: "2020-05-17T00:06:28.540472339+05:30"
+    dependencies:
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.13.1
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 0.10.0
+    description: A Helm chart for Kubernetes
+    digest: e1deeaa12b798365a3f0ef2d20b296b31d53f2aef975d8afe9195bedc8db8528
+    name: jmeter
+    type: application
+    urls:
+    - https://subh29.github.io/Jmeter-K8s/jmeter-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-05-17T00:06:28.536752494+05:30"
